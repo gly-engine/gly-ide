@@ -1,4 +1,4 @@
-import engine_lite from '@gamely/gly-engine-lite' assert {type: 'text'}
+import engine_micro from '@gamely/gly-engine-micro' assert {type: 'text'}
 import lua2tic from '@gamely/lua2tic'
 import gly2bin from './template'
 
@@ -43,7 +43,7 @@ export default async function (src: string, toolchain: string, options: Record<s
 
     const builders = {
         template: async () => download(await gly2bin(src, base), `game-${uptime}-${hash7}.${ext}`),
-        lua2tic: async () => download(lua2tic(engine_lite, src), `game-${uptime}-${hash7}.tic`),
+        lua2tic: async () => download(lua2tic(engine_micro, src), `game-${uptime}-${hash7}.tic`),
         code: async() => download(new TextEncoder().encode(src), `game-${uptime}-${hash7}.lua`)
     }
 
