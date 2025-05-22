@@ -7,9 +7,10 @@
   "bugs": "https://github.com/gamelly/gly-ide/issues",
   "devDependencies": {
     "@gamely/core-native-html5": "^0.0.19",
-    "@gamely/gly-engine-lite": "^0.0.19",
-    "@gamely/gly-engine": "^0.0.19",
-    "@gamely/lua2tic": "^0.0.19",
+    "@gamely/gly-engine-micro": "^0.0.20",
+    "@gamely/gly-engine-lite": "^0.0.20",
+    "@gamely/gly-engine": "^0.0.20",
+    "@gamely/lua2tic": "^0.0.20",
     "monaco-editor": "0.52.2",
     "wasmoon": "1.16.0",
     "bun": "^1.2.4"
